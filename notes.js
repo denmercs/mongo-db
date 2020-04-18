@@ -50,3 +50,9 @@ db.passengers.updateOne({name: "Albert Twostone"}, {$set: {hobbies: ["sports", "
 db.passengers.findOne({name: "Albert Twostone"}).hobbies.pretty()
 //query objects
 db.flightData.find({"status.description": "on-time"}).pretty()
+
+
+// DATA SCHEMAS AND DATA MODELING
+use companyData;
+db.companies.insertOne({name: "Fresh Apples Inc", isStartup: true, employees: 33, funding: 12345, details: {ceo: "Mark Super"}, tags: [{title: "super", {title: "perfect"], foundingDate: new Date(), insertedAt: new Timestamp()})
+db.companies.findOne();
